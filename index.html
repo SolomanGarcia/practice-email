@@ -15,9 +15,34 @@
         img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
         table { border-collapse: collapse !important; }
         body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+         /* iOS BLUE LINKS */
+         a[x-apple-data-detectors] {
+          color: inherit !important;
+          text-decoration: none !important;
+          font-size: inherit !important;
+          font-family: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+        }
+        
+        /* GMAIL BLUE LINKS */
+        u + #body a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+
+        a:hover {
+          color: red !important;
+          text-decoration: none;
+        }
     </style>
   </head>
-  <body style="margin: 0 !important; padding: 0 !important;">
+  <body id="body" style="margin: 0 !important; padding: 0 !important;">
     <!-- PREVIEW TEXT -->
     <div style="display: none; max-height: 0; overflow: hidden;">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore deleniti ullam aliquam facere nemo iusto, quidem veniam explicabo debitis ab iure dolorem earum natus aut esse. Voluptatibus nostrum ratione nemo.
@@ -40,7 +65,7 @@
             <tr>
               <td align="left" style="color: #999999; font-family: 'Avenir Next', sans-serif; font-size: 18px; font-weight: normal; line-height: 32px; padding: 20px 10px 0px 10px;">
                 <p style="margin: 0;">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni qui modi ad, voluptatum commodi unde, repellat placeat dolores reprehenderit animi incidunt corporis minima quidem ab autem maxime consequuntur deserunt tenetur!
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni qui modi ad, <a href="https://thebetter.email/blog/#" style="color: #000000; font-weight: bold; font-style: italic">voluptatum commodi unde</a>, repellat placeat dolores reprehenderit animi incidunt corporis minima quidem ab autem maxime consequuntur deserunt tenetur!
                 </p>
               </td>
             </tr>
