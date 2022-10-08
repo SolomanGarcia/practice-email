@@ -40,6 +40,18 @@
           color: red !important;
           text-decoration: none;
         }
+
+        @media screen and (max-width: 600px) {
+          .responsive-table {
+            width: 100% !important;
+          }
+
+          .mobile-copy {
+            font-size: 18px !important;
+            line-height: 28px !important;
+          }
+        }
+
     </style>
   </head>
   <body id="body" style="margin: 0 !important; padding: 0 !important;">
@@ -54,7 +66,7 @@
     <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
       <tr>
         <td>
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" role="presentation">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" role="presentation" class="responsive-table">
             <!-- HEADING MODULE -->
             <tr>
               <td align="center" style="color: #000000; font-family: 'Avenir Next', sans-serif; font-size: 28px; font-weight: normal; line-height: 56px; padding: 20px 10px 0px 10px;">
@@ -83,7 +95,7 @@
                 <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
                   <tr>
                     <td>
-                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="48%" role="presentation">
+                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="48%" role="presentation" class="responsive-table">
                         <tr>
                           <td>
                             <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
@@ -103,7 +115,7 @@
                           </td>
                         </tr>
                       </table>
-                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="48%" role="presentation">
+                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="48%" role="presentation" class="responsive-table">
                         <tr>
                           <td>
                             <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
@@ -145,7 +157,7 @@
             <!-- COPY MODULE -->
             <tr>
               <td align="left" style="background: #000000 url('https://place-hold.it/1200x800/ff0000'); color: #999999; font-family: 'Avenir Next', sans-serif; font-size: 14px; font-weight: normal; line-height: 18px; padding: 20px 10px 0px 10px">
-                <p style="margin: 0;">
+                <p style="margin: 0;" class="mobile-copy">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum delectus non sed voluptatum illum aspernatur eaque facere provident ad aperiam sapiente, <span style="text-decoration: underline;">sequi at molestias</span> necessitatibus nam voluptate expedita autem est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque iusto tempora asperiores iure consectetur. Quam modi odio eius maxime dolor voluptatem placeat, reiciendis, dignissimos ratione omnis tempora laborum soluta.
                 </p>
               </td>
